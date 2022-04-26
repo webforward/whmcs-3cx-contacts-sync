@@ -1,0 +1,43 @@
+{
+    "name": "webforward/whmcs-3cx-contacts",
+    "description": "Synchronize Contacts from WHMCS to 3CX.",
+    "keywords": ["whmcs", "3cx", "laravel zero", "laravel"],
+    "homepage": "https://www.webfwd.co.uk/",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Richard Leishman"
+        }
+    ],
+    "require": {
+        "php": "^7.4|^8.0",
+        "darthsoup/php-whmcs-api": "^1.2",
+        "guzzlehttp/guzzle": "^7.4",
+        "http-interop/http-factory-guzzle": "^1.2",
+        "illuminate/database": "^8.40",
+        "laravel-zero/framework": "^8.8"
+    },
+    "require-dev": {
+        "fakerphp/faker": "^1.9.1",
+        "mockery/mockery": "^1.4.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    },
+    "autoload-dev": {
+    },
+    "config": {
+        "preferred-install": "dist",
+        "sort-packages": true,
+        "optimize-autoloader": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": false
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "bin": ["builds/wh3cx"]
+}
